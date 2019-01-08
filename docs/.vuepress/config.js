@@ -61,12 +61,13 @@ module.exports = {
     nav: require('./nav/zh'),
     sidebar: {
       '/api/': getApiSidebar(),
-      '/guide/': getGuideSidebar('指南', '深入'),
+      '/guide/': getGuideSidebar('指南', '关于文档'),
       '/plugin/': getPluginSidebar('插件', '介绍', '官方插件'),
       '/theme/': getThemeSidebar('主题', '介绍')
     }
   },
-  plugins: [
+  // 当前版本不支持插件
+  /* plugins: [
     ['@vuepress/i18n-ui', false],
     ['@vuepress/back-to-top', true],
     ['@vuepress/pwa', {
@@ -78,7 +79,7 @@ module.exports = {
     ['@vuepress/google-analytics', {
       ga: 'UA-128189152-1'
     }],
-  ],
+  ], */
   clientRootMixin: path.resolve(__dirname, 'mixin.js'),
   extendMarkdown(md) {
     md.use(container, 'upgrade', {
@@ -104,7 +105,7 @@ function getGuideSidebar(groupA, groupB) {
       ]
     },
     {
-      title: '关于文档',
+      title: groupB,
       collapsable: false,
       children: [
         'documents',

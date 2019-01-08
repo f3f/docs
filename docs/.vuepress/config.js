@@ -100,13 +100,21 @@ function getGuideSidebar(groupA, groupB) {
         'basic-config',
         'assets',
         'markdown',
-        'using-vue',
-        'i18n',
-        'deploy',
-        'codepen'
+        'using-vue'
       ]
     },
     {
+      title: '关于文档',
+      collapsable: false,
+      children: [
+        'documents',
+        'specifications',
+        'codepen',
+        'i18n',
+        'deploy'
+      ]
+    },
+   /*  {
       title: groupB,
       collapsable: false,
       children: [
@@ -115,7 +123,7 @@ function getGuideSidebar(groupA, groupB) {
         'markdown-slot',
         'global-computed'
       ]
-    }
+    } */
   ]
 }
 

@@ -48,7 +48,7 @@ module.exports = {
   ],
   // theme: '@vuepress/vue',
   themeConfig: {
-    repo: 'wuyax',
+    repo: 'wuyax/docs',
     editLinks: true,
     docsDir: 'docs',
     // #697 Provided by the official algolia team.

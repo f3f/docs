@@ -7,7 +7,7 @@ module.exports = [
     text: 'API',
     link: '/api/'
   },
-  {
+  /* {
     text: '配置',
     link: '/config/'
   },
@@ -53,5 +53,5 @@ module.exports = [
         ]
       }
     ]
-  }
+  } */
 ]

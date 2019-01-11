@@ -1,72 +1,106 @@
-# 工具
+# Array
 
-## chunk
+## arrayConcat
 
 ```js
-_.chunk(array, [size=1])
+util.arrayConcat(array1[,array2])
 ```
-Creates an array of elements split into groups the length of size. If array can't be split evenly, the final chunk will be the remaining elements.
+传入多个数组，返回一个合并以后的数组
 
 **Arguments**  
-  `array (Array)`: The array to process.  
-  `[size=1] (number)`: The length of each chunk
+  `array1 (Array)`: 需要合并的数组们 
 
 **Returns**  
-  `(Array)`: Returns the new array of chunks.
+  `(Array)`: 一个合并以后的新数组
 
 **Example**
 
 ```js
-_.chunk(['a', 'b', 'c', 'd'], 2);
-// => [['a', 'b'], ['c', 'd']]
- 
-_.chunk(['a', 'b', 'c', 'd'], 3);
-// => [['a', 'b', 'c'], ['d']]
+util.arrayConcat(['a', 'b', 'c', 'd'], [1, 2, 3]);
+// => ['a', 'b', 'c', 'd', 1, 2, 3]
 ```
 
-## compact
+## arrShuffle
 
 ```js
-_.compact(array)
+util.arrShuffle(array)
 ```
-Creates an array with all falsey values removed. The values false, null, 0, "", undefined, and NaN are falsey.
+打乱传入的原始数组的顺序，并返回一个新的数组
 
 **Arguments**  
- `array (Array)`: The array to compact.
+ `array (Array)`: 需要打乱顺序的数组
 
 **Returns**  
-`(Array)`: Returns the new array of filtered values.
+`(Array)`: 打乱顺序以后的新数组
 
 **Example**
 
 ```js
-_.compact([0, 1, false, 2, '', 3]);
-// => [1, 2, 3]
+util.arrShuffle([0, 1, false, 2, '', 3]);
+// => [0, false, 1, 3, 2, '']
 ```
-## concat
 
+## max
+
+```js
+util.max(array)
 ```
-_.concat(array, [values])
-```
-Creates a new array concatenating array with any additional arrays and/or values.
+计算数组的最大值，如果数组是空或者`falsey`那么返回`undefined`
 
 **Arguments**  
-  `array (Array)`: The array to concatenate.  
-  `[values] (...*)`: The values to concatenate.
+array (Array): 需要遍历的数组
 
 **Returns**  
-  `(Array)`: Returns the new concatenated array.
+(*): 返回最大值
+
+**Example**  
+```js
+util.max([4, 2, 8, 6]);
+// => 8
+ 
+util.max([]);
+// => undefined
+```
+
+## min
+
+```js
+util.min(array)
+```
+计算数组的最小值，如果数组是空或者`falsey`那么返回`undefined`
+
+**Arguments**  
+array (Array): 需要遍历的数组
+
+**Returns**  
+(*): 返回最小值
 
 **Example**
 
 ```js
-var array = [1];
-var other = _.concat(array, 2, [3], [[4]]);
+util.min([4, 2, 8, 6]);
+// => 2
  
-console.log(other);
-// => [1, 2, 3, [4]]
- 
-console.log(array);
-// => [1]
+util.min([]);
+// => undefined
 ```
-### Object
+
+## unique
+
+```js
+util.unique(array)
+```
+去除数组中重复的项目
+
+**Arguments**  
+array (Array): 需要遍历的数组。
+
+**Returns**  
+(*): 返回一个没有重复数据的新数组
+
+**Example**
+
+```js
+util.unique([4, 2, 8, 6, 4]);
+// => [4, 2, 8, 6]
+```

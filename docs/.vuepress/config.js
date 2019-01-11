@@ -5,7 +5,7 @@ module.exports = {
   dest: './docs/.vuepress/dist',
   base: '/docs/',
   lang: 'zh-CN',
-  title: '组件库',
+  title: 'DTC',
   description: '前端组件库',
   head: [
     ['link', {
@@ -62,8 +62,8 @@ module.exports = {
     sidebar: {
       '/api/': getApiSidebar(),
       '/guide/': getGuideSidebar('指南', '关于文档'),
-      '/plugin/': getPluginSidebar('插件', '介绍', '官方插件'),
-      '/theme/': getThemeSidebar('主题', '介绍')
+      // '/plugin/': getPluginSidebar('插件', '介绍', '官方插件'),
+      // '/theme/': getThemeSidebar('主题', '介绍')
     }
   },
   // 当前版本不支持插件
@@ -98,10 +98,7 @@ function getGuideSidebar(groupA, groupB) {
         '',
         'getting-started',
         'directory-structure',
-        'basic-config',
-        'assets',
-        'markdown',
-        'using-vue'
+        'contribute'
       ]
     },
     {
@@ -181,7 +178,7 @@ function getApiSidebar() {
     collapsable: false,
     children: [
       '',
-      'util-array'
+      'util-compare'
     ]
   },]
 }

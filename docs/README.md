@@ -10,33 +10,33 @@ features:
   details: 适用者可以通过开发需求按需引入需要的方法，减小打包文件体积。
 - title: 详细的文档
   details: 我们提供详细的使用文档
-footer: MIT Licensed | Copyright © 2018-present JFE
+footer: MIT Licensed | Copyright © 2018-present DTC
 ---
 
 ## 使用
 浏览器环境：
 ```js
 // 完整引入
-<script src="jfe.umd.min.js"></script>
+<script src="dtc.umd.min.js"></script>
 ```
 ```js
 // 按需引入
-<script src="jfe.util.umd.min.js"></script>
+<script src="dtc.util.umd.min.js"></script>
 ```
 通过 npm：
 ```bash
-$ npm install jflib --save
+$ npm install dtc --save
 ```
 在组件中引入
 ```js
 // 按需引入
-import {util} from 'jflib'
+import {util} from 'dtc'
 // 使用
 let arr = [3,4,4,33,4,3,4]
 util.unique(arr) // [3,4,33]
 
 // 完整引入
-import JFE from 'jflib'
+import dtc from 'dtc'
 // 使用
 let arr = [3,4,4,33,4,3,4]
 JEF.util.unique(arr) // [3,4,33]

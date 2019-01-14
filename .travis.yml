@@ -1,11 +1,30 @@
 language: node_js
 node_js: stable
 
-deploy:
-  provider: pages
-  local-dir: ./docs/.vuepress/dist
-  skip-cleanup: true
-  github-token: $GH_TOKEN
-  keep-history: true
-  on:
-    branch: master
+cache:
+  directories:
+    - node_modules
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+script:
+  - npm run docs:build
+
+after_script:
+  - cd docs/.vuepress/dist
+  - git init
+  - git config user.name "wuyax"
+  - git config user.email "pengqingkai@gmail.com"
+  - git add -A
+  - git commit -m "update document"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
+# E: Build LifeCycle
+
+branches:
+  only:
+    - master
+env:
+ global:
+   - GH_REF: github.com/wuyax/docs.git

@@ -1,12 +1,10 @@
-# About
+# 关于本文档
 
+![build](https://api.travis-ci.com/wuyax/docs.svg?branch=master)
+
+本仓库是`dtc`组件库的使用文档，[dtc](https://github.com/wuyax/DTC)托管在GitHub上，同时你可以`npm`或者`CDN`的方式使用`dtc`，关于它的使用方法，请访问[dtc文档](https://wuyax.github.io/docs/)。
+
+本仓库中：
 `master` 分支存放的是文档库的源码
+
 `gh-pages` 分支存放的是静态页面
-
-## 原则
-
-1. 低耦合-不依赖第三方库
-2. 高兼容-支持主流浏览器
-3. 高容错-不应外部调用及传参导致内部报错
-4. 通用-基本每个项目都经常可以用到
-5. 易用-符合开发习惯，减少学习成本

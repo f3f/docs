@@ -1,5 +1,11 @@
 # Array
 
+:::warning NOTE
+在本文档的所有使用文档中，使用示例都是以以下的形式出现：  
+`[dtc.]util.arrayConcat(array1[,array2])`  
+**[dtc.]** 表示 `dtc`命名空间是可选的，当你使用按需引入的方式的时候，没有顶层的`dtc`命名空间，当你完全引入的时候则需要通过`dtc`来访问具体的方法。
+:::
+
 ## arrayConcat
 
 ```js

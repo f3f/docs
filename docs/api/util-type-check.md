@@ -77,7 +77,7 @@ value (*): 需要检查的值
 检查值是不是 `NaN`. 
 
 :::warning NOTE
-该方法与全局`isNaN`不同，`window.isNaN`对于`undefined`和其他非数字值返回`true`。
+该方法与全局`isNaN`不同，`window.isNaN`对于`undefined`和其他非数字值返回`true`
 :::
 
 **Arguments**  

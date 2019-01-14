@@ -1,9 +1,9 @@
-# Compare
+# Object
 
 ## cloneDeep
 
 ```js
-_.cloneDeep(value)
+[dtc.]util.cloneDeep(value)
 ```
 深拷贝一个值或者对象
 
@@ -18,7 +18,7 @@ value (*): 需要被克隆的原始值
 ```js
 var objects = [{ 'a': 1 }, { 'b': 2 }];
  
-var deep = _.cloneDeep(objects);
+var deep = [dtc.]util.cloneDeep(objects);
 console.log(deep[0] === objects[0]);
 // => false
 ```
@@ -26,10 +26,10 @@ console.log(deep[0] === objects[0]);
 ## eq
 
 ```js
-util.eq(value, other)
+[dtc.]util.eq(value, other)
 ```
 
-在两个值之间执行SameValueZero比较以确定它们是否相等。
+在两个值之间执行[SameValueZero](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)比较以确定它们是否相等。
 
 **Arguments**  
 value (*): 需要比较的值  
@@ -44,26 +44,26 @@ other (*): 另一个需要比较的值
 var object = { 'a': 1 };
 var other = { 'a': 1 };
  
-_.eq(object, object);
+[dtc.]util.eq(object, object);
 // => true
  
-_.eq(object, other);
+[dtc.]util.eq(object, other);
 // => false
  
-_.eq('a', 'a');
+[dtc.]util.eq('a', 'a');
 // => true
  
-_.eq('a', Object('a'));
+[dtc.]util.eq('a', Object('a'));
 // => false
  
-_.eq(NaN, NaN);
+[dtc.]util.eq(NaN, NaN);
 // => true
 ```
 
 ## isEqual
 
 ```js
-_.isEqual(value, other)
+[dtc.]util.isEqual(value, other)
 ```
 
 在两个值之间执行深度比较以确定它们是否相等。
@@ -84,7 +84,7 @@ other (*): 另一个需要比较的值
 var object = { 'a': 1 };
 var other = { 'a': 1 };
  
-_.isEqual(object, other);
+[dtc.]util.isEqual(object, other);
 // => true
  
 object === other;

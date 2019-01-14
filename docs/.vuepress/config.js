@@ -112,16 +112,6 @@ function getGuideSidebar(groupA, groupB) {
         'deploy'
       ]
     },
-   /*  {
-      title: groupB,
-      collapsable: false,
-      children: [
-        'frontmatter',
-        'permalinks',
-        'markdown-slot',
-        'global-computed'
-      ]
-    } */
   ]
 }
 
@@ -178,7 +168,11 @@ function getApiSidebar() {
     collapsable: false,
     children: [
       '',
-      'util-compare'
+      'util-object',
+      'util-string',
+      'util-type-check',
+      'util-common',
+      'util-storage'
     ]
   },]
 }

@@ -39,5 +39,5 @@ util.unique(arr) // [3,4,33]
 import dtc from 'dtc'
 // 使用
 let arr = [3,4,4,33,4,3,4]
-JEF.util.unique(arr) // [3,4,33]
+dtc.util.unique(arr) // [3,4,33]
 ```

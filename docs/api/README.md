@@ -3,7 +3,7 @@
 ## arrayConcat
 
 ```js
-util.arrayConcat(array1[,array2])
+[dtc.]util.arrayConcat(array1[,array2])
 ```
 传入多个数组，返回一个合并以后的数组
 
@@ -16,14 +16,14 @@ util.arrayConcat(array1[,array2])
 **Example**
 
 ```js
-util.arrayConcat(['a', 'b', 'c', 'd'], [1, 2, 3]);
+[dtc.]util.arrayConcat(['a', 'b', 'c', 'd'], [1, 2, 3]);
 // => ['a', 'b', 'c', 'd', 1, 2, 3]
 ```
 
 ## arrShuffle
 
 ```js
-util.arrShuffle(array)
+[dtc.]util.arrShuffle(array)
 ```
 打乱传入的原始数组的顺序，并返回一个新的数组
 
@@ -36,14 +36,14 @@ util.arrShuffle(array)
 **Example**
 
 ```js
-util.arrShuffle([0, 1, false, 2, '', 3]);
+[dtc.]util.arrShuffle([0, 1, false, 2, '', 3]);
 // => [0, false, 1, 3, 2, '']
 ```
 
 ## max
 
 ```js
-util.max(array)
+[dtc.]util.max(array)
 ```
 计算数组的最大值，如果数组是空或者`falsey`那么返回`undefined`
 
@@ -55,17 +55,17 @@ array (Array): 需要遍历的数组
 
 **Example**  
 ```js
-util.max([4, 2, 8, 6]);
+[dtc.]util.max([4, 2, 8, 6]);
 // => 8
  
-util.max([]);
+[dtc.]util.max([]);
 // => undefined
 ```
 
 ## min
 
 ```js
-util.min(array)
+[dtc.]util.min(array)
 ```
 计算数组的最小值，如果数组是空或者`falsey`那么返回`undefined`
 
@@ -78,22 +78,22 @@ array (Array): 需要遍历的数组
 **Example**
 
 ```js
-util.min([4, 2, 8, 6]);
+[dtc.]util.min([4, 2, 8, 6]);
 // => 2
  
-util.min([]);
+[dtc.]util.min([]);
 // => undefined
 ```
 
 ## unique
 
 ```js
-util.unique(array)
+[dtc.]util.unique(array)
 ```
 去除数组中重复的项目
 
 **Arguments**  
-array (Array): 需要遍历的数组。
+array (Array): 需要遍历的数组
 
 **Returns**  
 (*): 返回一个没有重复数据的新数组
@@ -101,6 +101,6 @@ array (Array): 需要遍历的数组。
 **Example**
 
 ```js
-util.unique([4, 2, 8, 6, 4]);
+[dtc.]util.unique([4, 2, 8, 6, 4]);
 // => [4, 2, 8, 6]
 ```

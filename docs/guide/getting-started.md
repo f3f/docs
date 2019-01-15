@@ -5,11 +5,11 @@
 浏览器环境：
 ```js
 // 完整引入
-<script src="dtc.umd.min.js"></script>
+<script src="https://unpkg.com/dtc@1.0.2/dist/dtc.umd.min.js"></script>
 ```
 ```js
 // 按需引入
-<script src="dtc.util.umd.min.js"></script>
+<script src="https://unpkg.com/dtc@1.0.2/dist/dtc.util.umd.min.js"></script>
 ```
 
 通过 npm：

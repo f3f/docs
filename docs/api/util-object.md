@@ -90,3 +90,36 @@ var other = { 'a': 1 };
 object === other;
 // => false
 ```
+
+## merge
+
+```js
+[dtc.]util.merge(object, [sources])
+```
+
+以递归方式将源对象的自身和继承的可枚属性合并到目标对象中。 如果存在目标值，则跳过解析为undefined的源属性。 数组和普通对象属性以递归方式合并。 其他对象和值类型由赋值覆盖。 源对象从左到右应用。 后续来源会覆盖以前来源的属性分配。
+
+:::warning NOTE
+This method mutates object.
+:::
+
+**Arguments**  
+object (Object): 目标对象  
+[sources] (...Object): 源对象
+
+**Returns**
+(Object): 返回的对象
+
+**Example**
+```js
+var object = {
+  'a': [{ 'b': 2 }, { 'd': 4 }]
+};
+ 
+var other = {
+  'a': [{ 'c': 3 }, { 'e': 5 }]
+};
+ 
+[dtc.]util.merge(object, other);
+// => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
+```

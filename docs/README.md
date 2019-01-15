@@ -17,7 +17,7 @@ footer: MIT Licensed | Copyright © 2018-present DTC
 浏览器环境：
 ```js
 // 完整引入
-<script src="dtc.umd.min.js"></script>
+<script src="https://unpkg.com/dtc@1.0.2/dist/dtc.umd.min.js"></script>
 // 使用
 let arr = [3,4,4,33,4,3,4]
 dtc.util.unique(arr) // [3,4,33]
@@ -25,7 +25,7 @@ dtc.util.unique(arr) // [3,4,33]
 ```
 ```js
 // 按需引入
-<script src="dtc.util.umd.min.js"></script>
+<script src="https://unpkg.com/dtc@1.0.2/dist/dtc.util.umd.min.js"></script>
 // 使用
 let arr = [3,4,4,33,4,3,4]
 util.unique(arr) // [3,4,33]

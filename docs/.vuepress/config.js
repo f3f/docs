@@ -60,7 +60,7 @@ module.exports = {
     lastUpdated: '上次更新',
     nav: require('./nav/zh'),
     sidebar: {
-      '/api/': getApiSidebar('Util','Vis'),
+      '/api/': getApiSidebar('Util','Vis','Dev'),
       '/guide/': getGuideSidebar('指南', '关于文档'),
       // '/plugin/': getPluginSidebar('插件', '介绍', '官方插件'),
       // '/theme/': getThemeSidebar('主题', '介绍')
@@ -162,7 +162,7 @@ function getThemeSidebar(groupA, introductionA) {
   }, ]
 }
 
-function getApiSidebar(groupA, groupB) {
+function getApiSidebar(groupA, groupB, groupC) {
   return [{
     title: groupA,
     collapsable: false,
@@ -178,7 +178,13 @@ function getApiSidebar(groupA, groupB) {
     title: groupB,
     collapsable: false,
     children: [
-      'vis-test'
+      'vis-map3d'
+    ]
+  },{
+    title: groupC,
+    collapsable: false,
+    children: [
+      'dev-debug'
     ]
   }]
 }

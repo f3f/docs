@@ -74,3 +74,7 @@ length (number): id长度，默认为6
 [dtc.]util.uId(8);
 // => sjwuDjze
 ```
+
+:::warning NOTE
+该方法在前端生成ID，并不能保证ID的唯一性，你必须在服务器端验证ID的唯一性。
+:::

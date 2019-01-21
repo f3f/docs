@@ -1,15 +1,16 @@
 ---
 home: true
 # heroImage: /hero.png
-actionText: 快速上手 →
+actionText: 开始使用
 actionLink: /api/
 features:
-- title: 精品组件
+- title: 实用方法
   details: 提供在实际开发中使用频率极高的代码片段和方法，节约大量上网Google时间，提高工作效率。
+- title: 高频组件
+  details: 提供第三方库的扩展方法。基于第三方开源库（Three.js、Echarts、D3js）等，提供的常用的操作方法或二次封装。
 - title: 模块化
-  details: 适用者可以通过开发需求按需引入需要的方法，减小打包文件体积。
-- title: 详细的文档
-  details: 我们提供详细的使用文档
+  details: 使用者可以通过实际情况按需引入需要的模块，减小打包后项目体积。更多关于模块化的信息请访问“指南”。
+
 footer: MIT Licensed | Copyright © 2018-present DTC
 ---
 

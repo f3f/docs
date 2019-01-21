@@ -9,7 +9,7 @@
 chunk
 
 ```js
-_.chunk(array, [size=1])
+[dtc.]util.chunk(array, [size=1])
 ```
 Creates an array of elements split into groups the length of size. If array can't be split evenly, the final chunk will be the remaining elements.
 
@@ -23,10 +23,10 @@ Creates an array of elements split into groups the length of size. If array can'
 **Example**
 
 ```js
-_.chunk(['a', 'b', 'c', 'd'], 2);
+[dtc.]util.chunk(['a', 'b', 'c', 'd'], 2);
 // => [['a', 'b'], ['c', 'd']]
  
-_.chunk(['a', 'b', 'c', 'd'], 3);
+[dtc.]util.chunk(['a', 'b', 'c', 'd'], 3);
 // => [['a', 'b', 'c'], ['d']]
 ```
 :::

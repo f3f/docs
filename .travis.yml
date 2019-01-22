@@ -10,7 +10,7 @@ install:
   - npm install
 
 script:
-  - npm run docs:build
+  - npm run build
 
 after_script:
   - cd docs/.vuepress/dist

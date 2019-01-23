@@ -1,5 +1,47 @@
 # Common
 
+## Browser
+
+```js
+new [dtc.]util.Browser()
+```
+
+浏览器及系统嗅探
+
+**Arguments**  
+null
+
+**Returns**
+(object): 实例对象
+
+**Example**
+```js
+let browser = new [dtc.]util.Browser()
+// browser.browser: "Chrome"
+// browser.device: "PC"
+// browser.engine: "Blink"
+// browser.language: "zh_CN"
+// browser.os: "Mac OS"
+// browser.osVersion: "10.14.2"
+// browser.version: "71.0.3578.98"
+
+// 判断浏览器版本
+// 支持浏览器大版本的判别
+browser.isVersion('gt70')
+// true
+browser.isVersion('lt70')
+// false
+browser.isVersion('eq70')
+// false
+browser.isVersion('>70')
+// true
+browser.isVersion('<70')
+// false
+browser.isVersion('=70')
+// false
+```
+
+
 ## urlArgs
 
 ```js
@@ -8,10 +50,10 @@
 
 取得URL的search信息转为对象形式
 
-**Arguments**
+**Arguments**  
 null
 
-**Returns**
+**Returns**  
 (object): 返回url里的查询参数，如果没有则返回`{}`
 
 **Example**
@@ -21,6 +63,7 @@ let url = `http://example.com/index.html?a=12&b=13`
 [dtc.]util.urlArgs()
 // {a:12,b:13}
 ```
+
 ## moment
 
 ```js
@@ -28,15 +71,25 @@ let url = `http://example.com/index.html?a=12&b=13`
 [dtc.]util.moment('1991/09/01')
 ```
 
-日期处理相关方法
+格式化日期为特定格式
 
-### format
+**Arguments**
+
+任何可通过 new Date() 转换的日期格式 或者 null
+
+
+**方法**
+
+`format()`
 
 ```js
 [dtc.]util.moment('1991/09/01 13:09:07').format()
 ```
 
-#### **Arguments** 任何可通过 new Date() 转换的日期格式|| null
+**format方法参数**
+
+字符串，你希望的目标日期格式
+
 ##### 年份、月份、日期相关
 Input|Example|Description
 :--:|:--:|:--:

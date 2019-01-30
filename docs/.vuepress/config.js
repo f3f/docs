@@ -6,7 +6,7 @@ module.exports = {
   base: '/docs/',
   lang: 'zh-CN',
   title: 'DTC',
-  description: '前端组件库',
+  description: '前端脚本库(v1.0.3)',
   head: [
     ['link', {
       rel: 'icon',

@@ -28,4 +28,4 @@ branches:
     - master
 env:
  global:
-   - GH_REF: github.com/wuyax/docs.git
+   - GH_REF: github.com/f3f/docs.git
